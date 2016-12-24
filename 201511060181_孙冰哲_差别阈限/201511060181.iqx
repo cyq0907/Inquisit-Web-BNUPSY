@@ -1,0 +1,282 @@
+﻿
+*************************************
+<picture 1>
+	/items = ("pic1.jpg")
+	/position = (25,25)
+</picture>
+<picture 2>
+	/items = ("pic2.jpg")
+	/position = (25,75)
+</picture>
+<picture 3>
+	/items = ("pic3.jpg")
+	/position = (75,25)
+</picture>
+<picture 4>
+	/items = ("pic4.jpg")
+	/position = (75,75)
+</picture>
+<picture 5>
+	/items = ("pic5.jpg")
+	/position = (25,25)
+</picture>
+<picture 6>
+	/items = ("pic6.jpg")
+	/position = (25,75)
+</picture>
+<picture 7>
+	/items = ("pic7.jpg")
+	/position = (75,25)
+</picture>
+<picture 8>
+	/items = ("pic8.jpg")
+	/position = (75,75)
+</picture>
+<picture 9>
+	/items = ("pic9.jpg")
+	/position = (25,25)
+</picture>
+<picture 10>
+	/items = ("pic10.jpg")
+	/position = (25,75)
+</picture>
+<picture 11>
+	/items = ("pic11.jpg")
+	/position = (75,25)
+</picture>
+<picture 12>
+	/items = ("pic12.jpg")
+	/position = (75,75)
+</picture>
+<picture 13>
+	/items = ("pic13.jpg")
+	/position = (25,25)
+</picture>
+<picture 14>
+	/items = ("pic14.jpg")
+	/position = (25,75)
+</picture>
+<picture 15>
+	/items = ("pic15.jpg")
+	/position = (75,25)
+</picture>
+
+<picture S1>
+/items = ("same.jpg")
+/position=(25,25)
+</picture>
+<picture S2>
+/items = ("same.jpg")
+/position=(25,75)
+</picture>
+<picture S3>
+/items = ("same.jpg")
+/position=(75,25)
+</picture>
+<picture S4>
+/items = ("same.jpg")
+/position=(75,75)
+</picture>
+//指导语
+*************************************
+<text instructiontxt>
+	/hjustify = center
+	/items = ("欢迎您来参加我们的实验，接下来你将会看到四张图片，请选出与其他三张灰度不同的图片")
+	/size=(850,600)
+	/fontstyle = ("宋体", 24pt)
+	/txbgcolor = (transparent)
+	/txcolor = (255,255,255)
+</text>
+
+<text anykeytxt>
+	/items = ("按任意键开始实验")
+	/vposition = 90 pct
+	/fontstyle = ("宋体", 24pt)
+	/txcolor = (255,0,0)
+	/txbgcolor = (255,255,255)
+</text>
+
+<text correctmsg>
+	/items =  ("√")
+	/fontstyle = ("Arial", 80ptc)
+	/txbgcolor = (255,0,0)
+	/txcolor = (255,255,255)
+</text>
+
+<text errormsg>
+	/items = ("×")
+	/fontstyle = ("Arial", 80ptc)
+	/txbgcolor = (255,0,0)
+	/txcolor = (255,255,255)
+</text>
+
+//定义trals
+*************************************
+<trial instruction>
+	/validresponse = (anyresponse)
+	/stimulusframes = [1=instructiontxt,anykeytxt]
+	/recorddata = false
+</trial>
+
+<trial 1>
+	/inputdevice = mouse
+	/stimulustimes = [1=1,S2,S3,S4]
+	/validresponse = (lbuttondown)
+	/correctresponse = (1)
+	/correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+</trial>
+
+<trial 2>
+	/pretrialpause = 100
+	/inputdevice = mouse
+	/stimulustimes = [1=S1,2,S3,S4]
+	/validresponse = (lbuttondown)
+	/correctresponse = (2)
+	/correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+</trial>
+
+<trial 3>
+	/pretrialpause = 100
+	/inputdevice = mouse
+	/stimulustimes = [1=S1,S2,3,S4]
+	/validresponse = (lbuttondown)
+	/correctresponse = (3)
+	/correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+</trial>
+
+<trial 4>
+	/pretrialpause = 100
+	/inputdevice = mouse
+	/stimulustimes = [1=S1,S2,S3,4]
+	/validresponse = (lbuttondown)
+	/correctresponse = (4)
+	/correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+</trial>
+
+<trial 5>
+	/inputdevice = mouse
+	/stimulustimes = [1=5,S2,S3,S4]
+	/validresponse = (lbuttondown)
+	/correctresponse = (5)
+	/correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+</trial>
+
+<trial 6>
+	/pretrialpause = 100
+	/inputdevice = mouse
+	/stimulustimes = [1=S1,6,S3,S4]
+	/validresponse = (lbuttondown)
+	/correctresponse = (6)
+	/correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+</trial>
+
+<trial 7>
+	/pretrialpause = 100
+	/inputdevice = mouse
+	/stimulustimes = [1=S1,S2,7,S4]
+	/validresponse = (lbuttondown)
+	/correctresponse = (7)
+	/correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+</trial>
+
+<trial 8>
+	/pretrialpause = 100
+	/inputdevice = mouse
+	/stimulustimes = [1=S1,S2,S3,8]
+	/validresponse = (lbuttondown)
+	/correctresponse = (8)
+	/correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+</trial>
+
+<trial 9>
+	/inputdevice = mouse
+	/stimulustimes = [1=9,S2,S3,S4]
+	/validresponse = (lbuttondown)
+	/correctresponse = (9)
+	/correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+</trial>
+
+<trial 10>
+	/pretrialpause = 100
+	/inputdevice = mouse
+	/stimulustimes = [1=S1,10,S3,S4]
+	/validresponse = (lbuttondown)
+	/correctresponse = (10)
+	/correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+</trial>
+
+<trial 11>
+	/pretrialpause = 100
+	/inputdevice = mouse
+	/stimulustimes = [1=S1,S2,11,S4]
+	/validresponse = (lbuttondown)
+	/correctresponse = (11)
+	/correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+</trial>
+
+<trial 12>
+	/pretrialpause = 100
+	/inputdevice = mouse
+	/stimulustimes = [1=S1,S2,S3,12]
+	/validresponse = (lbuttondown)
+	/correctresponse = (12)
+	/correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+</trial>
+
+<trial 13>
+	/inputdevice = mouse
+	/stimulustimes = [1=13,S2,S3,S4]
+	/validresponse = (lbuttondown)
+	/correctresponse = (13)
+	/correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+</trial>
+
+<trial 14>
+	/pretrialpause = 100
+	/inputdevice = mouse
+	/stimulustimes = [1=S1,14,S3,S4]
+	/validresponse = (lbuttondown)
+	/correctresponse = (14)
+	/correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+</trial>
+
+<trial 15>
+	/pretrialpause = 100
+	/inputdevice = mouse
+	/stimulustimes = [1=S1,S2,15,S4]
+	/validresponse = (lbuttondown)
+	/correctresponse = (15)
+	/correctmessage = (correctmsg,500)
+	/errormessage = (errormsg,500)
+</trial>
+
+
+//定义blocks
+<block instructblk>
+	/screencolor = (0,0,0)
+	/trials = [1 = instruction]
+</block>
+
+
+<block picblk>
+	/screencolor = (0,0,0)
+	/blockfeedback = (meanlatency,correct)
+	/trials = [1-16 = noreplacenorepeat(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15)]
+</block>
+<expt>
+	/ blocks = [1 = instructblk;  2 = picblk]
+</expt>
