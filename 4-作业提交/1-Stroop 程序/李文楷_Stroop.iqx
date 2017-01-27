@@ -1,0 +1,106 @@
+﻿<item instruction>
+  /1 = "请将左手和右手的食指食指分别放在键盘的F键和J键上，屏幕中央会出现不同颜色颜色的汉字，请判断汉字的颜色，如果是红色请按“F”键，如果是蓝色请按“J”键。请记住，是根据汉字的颜色做出反应，而不是其含义指示的颜色。"
+</item>
+
+
+<text sameRedtxt>
+  / items = ("红")
+  / fontstyle = ("宋体",60ptc)
+  / txbgcolor = (0,0,0)
+  / txcolor = (255,0,0)
+</text>
+
+<text differentRedtxt>
+  / items = ("红")
+  / fontstyle = ("宋体",60ptc)
+  / txbgcolor = (0,0,0)
+  / txcolor = (0,0,255)
+</text>
+
+<text sameBluetxt>
+   / items = ("蓝")
+   / fontstyle = ("宋体",60ptc)
+   / txbgcolor = (0,0,0)
+   / txcolor = (0,0,255)
+</text>
+
+<text differentBluetxt>
+   / items = ("蓝")
+   / fontstyle = ("宋体",60ptc)
+   / txbgcolor = (0,0,0)
+   / txcolor = (255,0,0)
+</text>
+
+
+<text instructiontxt>
+  / hjustify = center
+  / items = instruction
+  / fontstyle = ("宋体",24ptc)
+  / txcolor = (255,255,255)
+  / txbgcolor = (transparent)
+  / size = (1200,300)
+</text>
+
+
+ 
+<text anykeytxt> 
+	/items = ("按任意键开始实验") 
+	/vposition = 70 pct 
+	/fontstyle = ("宋体", 24pt) 
+ 	/txcolor = (255,255,255) 	
+    /txbgcolor = (transparent) 
+ </text> 
+
+
+<trial instruction>
+  /validresponse = (anyresponse)
+  /stimulusframes = [1=instructiontxt,anykeytxt]
+  /recorddata = false
+</trial>
+
+
+<trial sameRedtrial>
+   /pretrialpause = 500
+   /validresponse = ("F","J")
+   /correctresponse = ("F")
+   /stimulusframes = [1= sameRedtxt]
+</trial>
+
+<trial differRedtrial>
+   /pretrialpause = 500
+   /validresponse = ("F","J")
+   /correctresponse = ("J")
+   /stimulusframes = [1 = differentRedtxt]
+</trial>
+
+<trial sameBluetrial>
+   /pretrialpause = 500
+   /validresponse = ("F","J")
+   /correctresponse = ("J")
+   /stimulusframes = [1 = sameBluetxt]
+
+</trial>
+
+<trial differBluetrial>
+   /pretrialpause = 500
+   /validresponse = ("F","J")
+   /correctresponse = ("F")
+   / stimulusframes = [1 = differentBluetxt]
+</trial>
+
+
+<block stroopblk>
+  /screencolor = (0,0,0)
+  /blockfeedback = (meanlatency,correct)
+  /trials = [1-16 = noreplace(sameRedtrial,differRedtrial,sameBluetrial,differBluetrial)]
+</block>
+
+<block instructionblk>
+  /screencolor = (0,0,0)
+  /trials = [1 = instruction]
+</block>
+
+
+<expt>
+    / blocks = [1 = instructionblk; 2 = stroopblk]
+</expt>
