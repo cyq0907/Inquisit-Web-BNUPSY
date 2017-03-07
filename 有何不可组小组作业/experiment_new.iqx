@@ -1,0 +1,959 @@
+﻿//IAT实验范式
+//词汇刺激标签
+<item flowerlabel>
+	/1 = "花"
+</item>
+
+<item wormlabel>
+	/1 = "虫"
+</item>
+
+<item weaponlabel>
+	/1 = "武器"
+</item>
+
+<item musiclabel>
+	/1 = "乐器"
+</item>
+
+<item positivelabel>
+	/1 = "正向"
+</item>
+
+<item negativelabel>
+	/2 = "负向"
+</item>
+
+==========================================
+//词汇刺激
+<item flower>
+    /1 = "翠菊"
+    /2 = "三叶草"
+    /3 = "风信子"
+    /4 = "金盏花"
+    /5 = "罂粟花"
+    /6 = "杜鹃花"
+    /7 = "番红花"
+    /8 = "鸢尾花"
+    /9 = "兰花"
+    /10 = "玫瑰"
+    /11 = "铃兰"
+    /12 = "水仙花"
+    /13 = "丁香花"
+    /14 = "三色堇"
+    /15 = "郁金香"
+    /16 = "金凤花"
+    /17 = "雏菊"
+    /18 = "百合花"
+    /19 = "牡丹花"
+    /20 = "紫罗兰"
+    /21 = "康乃馨"
+    /22 = "菖兰"
+    /23 = "木兰花"
+    /24 = "矮牵牛花"
+    /25 = "百日菊"
+</item>
+
+<item worm>
+    /1 = "蚂蚁"
+    /2 = "毛虫"
+    /3 = "跳蚤"
+    /4 = "蝗虫"
+    /5 = "蜘蛛"
+    /6 = "臭虫"
+    /7 = "蜈蚣"
+    /8 = "苍蝇"
+    /9 = "蛆"
+    /10 = "狼蛛"
+    /11 = "蜜蜂"
+    /12 = "蟑螂"
+    /13 = "小昆虫"
+    /14 = "蚊子"
+    /15 = "白蚁"
+    /16 = "甲虫"
+    /17 = "蟋蟀"
+    /18 = "大黄蜂"
+    /19 = "飞蛾"
+    /20 = "黄蜂"
+    /21 = "黑蚊"
+    /22 = "蜻蜓"
+    /23 = "虻"
+    /24 = "小蟑螂"
+    /25 = "象鼻虫"
+</item>
+
+<item weapon>
+    /1 = "箭"
+    /2 = "棍棒"
+    /3 = "枪"
+    /4 = "导弹"
+    /5 = "矛"
+    /6 = "斧"
+    /7 = "匕首"
+    /8 = "鱼叉"
+    /9 = "手枪"
+    /10 = "剑"
+    /11 = "刀片"
+    /12 = "炸药"
+    /13 = "短柄小斧"
+    /14 = "步枪"
+    /15 = "坦克"
+    /16 = "炸弹"
+    /17 = "火器"
+    /18 = "小刀"
+    /19 = "霰弹枪"
+    /20 = "催泪瓦斯"
+    /21 = "加农炮"
+    /22 = "手榴弹"
+    /23 = "狼牙棒"
+    /24 = "弹弓"
+    /25 = "鞭子"
+</item>
+
+<item music>
+    /1 = "风笛"
+    /2 = "大提琴"
+    /3 = "吉他"
+    /4 = "琵琶"
+    /5 = "长号"
+    /6 = "班卓琴"
+    /7 = "单簧管"
+    /8 = "口琴"
+    /9 = "曼陀林"
+    /10 = "喇叭"
+    /11 = "低音管"
+    /12 = "鼓"
+    /13 = "竖琴"
+    /14 = "双簧管"
+    /15 = "大号"
+    /16 = "铃"
+    /17 = "提琴"
+    /18 = "大键琴"
+    /19 = "钢琴"
+    /20 = "中提琴"
+    /21 = "小手鼓"
+    /22 = "长笛"
+    /23 = "号角"
+    /24 = "萨克斯管"
+    /25 = "小提琴"
+</item>
+
+<item positive>
+    /1 = "拥抱"
+    /2 = "自由"
+    /3 = "健康"
+    /4 = "喜爱"
+    /5 = "和平"
+    /6 = "愉快"
+    /7 = "朋友"
+    /8 = "天堂"
+    /9 = "忠诚"
+    /10 = "高兴"
+    /11 = "钻石"
+    /12 = "温和"
+    /13 = "诚实"
+    /14 = "幸运"
+    /15 = "彩虹"
+    /16 = "奖状"
+    /17 = "礼物"
+    /18 = "荣誉"
+    /19 = "奇迹"
+    /20 = "日出"
+    /21 = "家庭"
+    /22 = "快乐"
+    /23 = "笑声"
+    /24 = "福地"
+    /25 = "假期"
+</item>
+
+<item negative>
+    /1 = "虐待"
+    /2 = "事故"
+    /3 = "苦恼"
+    /4 = "攻击"
+    /5 = "癌症"
+    /6 = "撞碎"
+    /7 = "死亡"
+    /8 = "疾病"
+    /9 = "离婚"
+    /10 = "污秽"
+    /11 = "悲痛"
+    /12 = "憎恨"
+    /13 = "监狱"
+    /14 = "杀戮"
+    /15 = "谋杀"
+    /16 = "毒药"
+    /17 = "污染"
+    /18 = "贫穷"
+    /19 = "监禁"
+    /20 = "腐烂"
+    /21 = "生病"
+    /22 = "臭味"
+    /23 = "悲剧"
+    /24 = "丑陋"
+    /25 = "呕吐"
+</item>
+
+<item correctmsg>
+	/1 = "√"
+</item>
+
+<item error>
+	/1 = "×"
+</item>
+
+===============================================
+//各种指导语
+<item begininstruction>
+	/1 = "欢迎参加我们的实验，在实验中，你会看到一些花虫、武器乐器的词汇和一些正负向的词汇，你需要对这些词汇做出按键反应，在任务指导语中会详细地说明，在实验中，请尽快对词汇做出反应~n~n~n请按任意键继续..."
+</item>
+
+<item taskinstruction1>
+	/1 = "看到'<%values.currenttarget1%>'的词汇请按F键，看到' <%values.currenttarget2%>'的词汇请按J键~n~n~n请按任意键继续..."
+</item>
+
+<item taskinstruction2>
+	/1 = "看到'<%values.currenttarget1%>'的词汇和'<%values.currenttarget2%>'的词汇或者是'<%values.currenttarget3%>'的词汇和'<%values.currenttarget4%>'的词汇同时出现时请按F键，其余情况请按J键~n~n~n请按任意键继续..."
+</item>
+
+<item endinstruction>
+	/1 = "谢谢参与"
+</item>
+
+<item intervalinstruction>
+	/1 = "实验暂停，请休息片刻，继续完成实验"
+</item>
+
+<item breakinstruction>
+	/1 = "本模块结束，即将进入下一个模块~n~n~n请按任意键继续..."
+</item>
+
+********************************************************
+********************************************************
+//刺激设置
+<text flowertxt>
+	/items = flower
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+</text>
+
+<text wormtxt>
+	/items = worm
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+</text>
+
+<text weapontxt>
+	/items = weapon
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+</text>
+
+<text musictxt>
+	/items = music
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+</text>
+
+<text positivetxt>
+	/items = positive
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+</text>
+
+<text negativetxt>
+	/items = negative
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+</text>
+
+<text errortxt>
+	/items = error
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+</text>
+
+<text correctmsgtxt>
+	/items = correctmsg
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+</text>
+
+==========================================
+//为了联合实验的设置
+<text flowertxtL>
+	/items = flower
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+	/position = (25%, 50%)
+</text>
+
+<text flowertxtR>
+	/items = flower
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+	/position = (75%, 50%)
+</text>
+
+<text wormtxtL>
+	/items = worm
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+	/position = (25%, 50%)
+</text>
+
+<text wormtxtR>
+	/items = worm
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+	/position = (75%, 50%)
+</text>
+
+<text weapontxtL>
+	/items = weapon
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+	/position = (25%, 50%)
+</text>
+
+<text weapontxtR>
+	/items = weapon
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+	/position = (75%, 50%)
+</text>
+
+<text musictxtL>
+	/items = music
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+	/position = (25%, 50%)
+</text>
+
+<text musictxtR>
+	/items = music
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+	/position = (75%, 50%)
+</text>
+
+<text positivetxtL>
+	/items = positive
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+	/position = (25%, 50%)
+</text>
+
+<text positivetxtR>
+	/items = negative
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+	/position = (75%, 50%)
+</text>
+
+<text negativetxtL>
+	/items = negative
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+	/position = (25%, 50%)
+</text>
+
+<text negativetxtR>
+	/items = negative
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/fontstyle = ("Arial", 15%)
+	/position = (75%, 50%)
+</text>
+
+=============================================
+//指导语设置
+<text begininstructiontxt>
+	/items = begininstruction
+	/fontstyle = ("Arial", 4%)
+	/size = (90%, 80%)
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/position = (50%, 40%)
+	/select = sequence
+	/resetinterval = 20
+	/valign = top
+	/hjustify = center
+	/vjustify = top
+</text>
+
+<text taskinstruction1txt>
+	/items = taskinstruction1
+	/fontstyle = ("Arial", 4%)
+	/size = (90%, 50%)
+	/position = (50%, 50%)
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/valign = top
+	/hjustify = center
+	/vjustify = top
+</text>
+
+<text taskinstruction2txt>
+	/items = taskinstruction2
+	/fontstyle = ("Arial", 4%)
+	/size = (90%, 50%)
+	/position = (50%, 50%)
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/valign = top
+	/hjustify = center
+	/vjustify = top
+</text>
+
+<text endinstructiontxt>
+	/items = endinstruction
+	/fontstyle = ("Arial", 4%)
+	/size = (90%, 50%)
+	/position = (50%, 50%)
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/valign = top
+	/hjustify = center
+	/vjustify = top
+</text>
+
+<text intervalinstructiontxt>
+	/items = intervalinstruction
+	/fontstyle = ("Arial", 4%)
+	/size = (90%, 50%)
+	/position = (50%, 50%)
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/valign = top
+	/hjustify = center
+	/vjustify = top
+</text>
+
+<text breakinstructiontxt>
+	/items = breakinstruction
+	/fontstyle = ("Arial", 4%)
+	/size = (90%, 50%)
+	/position = (50%, 50%)
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/valign = top
+	/hjustify = center
+	/vjustify = top
+</text>
+
+**************************************************
+**************************************************
+//刺激的trial，被试间平衡
+<trial flowertrialR>
+	/stimulusframes = [1 = flowertxt]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/correctmessage = (correctmsgtxt, 200)
+	/errormessage = (errortxt, 200)
+	/posttrialpause = 300
+</trial>
+
+<trial flowertrialL>
+	/stimulusframes = [1 = flowertxt]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/correctmessage = (correctmsgtxt, 200)
+	/errormessage = (errortxt, 200)
+	/posttrialpause = 300
+</trial>
+
+<trial wormtrialR>
+	/stimulusframes = [1 = wormtxt]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/correctmessage = (correctmsgtxt, 200)
+	/errormessage = (errortxt, 200)
+	/posttrialpause = 300
+</trial>
+
+<trial wormtrialL>
+	/stimulusframes = [1 = wormtxt]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/correctmessage = (correctmsgtxt, 200)
+	/errormessage = (errortxt, 200)
+	/posttrialpause = 300
+</trial>
+
+<trial musictrialR>
+	/stimulusframes = [1 = musictxt]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/correctmessage = (correctmsgtxt, 200)
+	/errormessage = (errortxt, 200)
+	/posttrialpause = 300
+</trial>
+
+<trial musictrialL>
+	/stimulusframes = [1 = musictxt]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/correctmessage = (correctmsgtxt, 200)
+	/errormessage = (errortxt, 200)
+	/posttrialpause = 300
+</trial>
+
+<trial weapontrialR>
+	/stimulusframes = [1 = weapontxt]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/correctmessage = (correctmsgtxt, 200)
+	/errormessage = (errortxt, 200)
+	/posttrialpause = 300
+</trial>
+
+<trial weapontrialL>
+	/stimulusframes = [1 = weapontxt]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/correctmessage = (correctmsgtxt, 200)
+	/errormessage = (errortxt, 200)
+	/posttrialpause = 300
+</trial>
+
+<trial positivetrial>
+	/stimulusframes = [1 = positivetxt]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/correctmessage = (correctmsgtxt, 200)
+	/errormessage = (errortxt, 200)
+	/posttrialpause = 300
+</trial>
+
+<trial negativetrial>
+	/stimulusframes = [1 = negativetxt]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/correctmessage = (correctmsgtxt, 200)
+	/errormessage = (errortxt, 200)
+	/posttrialpause = 300
+</trial>
+
+==========================================
+//联合实验部分
+<trial combine_flowerL_pos1>
+	/stimulusframes = [1 = flowertxtL, positivetxtR]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_flowerR_pos1>
+	/stimulusframes = [1 = flowertxtR, positivetxtL]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_flowerL_neg1>
+	/stimulusframes = [1 = flowertxtL, negativetxtR]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_flowerR_neg1>
+	/stimulusframes = [1 = flowertxtR, negativetxtL]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_wormL_pos1>
+	/stimulusframes = [1 = wormtxtL, positivetxtR]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_wormR_pos1>
+	/stimulusframes = [1 = wormtxtR, positivetxtL]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_wormL_neg1>
+	/stimulusframes = [1 = wormtxtL, negativetxtR]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_wormR_neg1>
+	/stimulusframes = [1 = wormtxtR, negativetxtL]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_weaponL_pos1>
+	/stimulusframes = [1 = weapontxtL, positivetxtR]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_weaponR_pos1>
+	/stimulusframes = [1 = weapontxtR, positivetxtL]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_weaponL_neg1>
+	/stimulusframes = [1 = weapontxtL, negativetxtR]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_weaponR_neg1>
+	/stimulusframes = [1 = weapontxtR, negativetxtL]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_musicL_pos1>
+	/stimulusframes = [1 = musictxtL, positivetxtR]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_musicR_pos1>
+	/stimulusframes = [1 = musictxtR, positivetxtL]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_musicL_neg1>
+	/stimulusframes = [1 = musictxtL, negativetxtR]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_musicR_neg1>
+	/stimulusframes = [1 = musictxtR, negativetxtL]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/posttrialpause = 300
+</trial>
+
+=======================================
+//联合实验被试间平衡
+<trial combine_flowerL_pos2>
+	/stimulusframes = [1 = flowertxtL, positivetxtR]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_flowerR_pos2>
+	/stimulusframes = [1 = flowertxtR, positivetxtL]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_flowerL_neg2>
+	/stimulusframes = [1 = flowertxtL, negativetxtR]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_flowerR_neg2>
+	/stimulusframes = [1 = flowertxtR, negativetxtL]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_wormL_pos2>
+	/stimulusframes = [1 = wormtxtL, positivetxtR]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_wormR_pos2>
+	/stimulusframes = [1 = wormtxtR, positivetxtL]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_wormL_neg2>
+	/stimulusframes = [1 = wormtxtL, negativetxtR]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_wormR_neg2>
+	/stimulusframes = [1 = wormtxtR, negativetxtL]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_weaponL_pos2>
+	/stimulusframes = [1 = weapontxtL, positivetxtR]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_weaponR_pos2>
+	/stimulusframes = [1 = weapontxtR, positivetxtL]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_weaponL_neg2>
+	/stimulusframes = [1 = weapontxtL, negativetxtR]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_weaponR_neg2>
+	/stimulusframes = [1 = weapontxtR, negativetxtL]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_musicL_pos2>
+	/stimulusframes = [1 = musictxtL, positivetxtR]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_musicR_pos2>
+	/stimulusframes = [1 = musictxtR, positivetxtL]
+	/validresponse = ("F", "J")
+	/correctresponse = ("J")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_musicL_neg2>
+	/stimulusframes = [1 = musictxtL, negativetxtR]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/posttrialpause = 300
+</trial>
+
+<trial combine_musicR_neg2>
+	/stimulusframes = [1 = musictxtR, negativetxtL]
+	/validresponse = ("F", "J")
+	/correctresponse = ("F")
+	/posttrialpause = 300
+</trial>
+
+========================================
+//指导语部分
+<trial begininstructiontrial>
+	/stimulusframes = [1 = begininstructiontxt]
+	/correctresponse = (anyresponse)
+	/errormessage = false
+	/recorddata = false
+</trial>
+
+<trial taskinstruction1trial>
+	/stimulusframes = [1 = taskinstruction1txt]
+	/correctresponse = (anyresponse)
+	/errormessage = false
+	/correctmessage = false
+	/recorddata = false
+</trial>
+
+<trial taskinstruction2trial>
+	/stimulusframes = [1 = taskinstruction2txt]
+	/correctresponse = (anyresponse)
+	/errormessage = false
+	/correctmessage = false
+	/recorddata = false
+</trial>
+
+<trial endinstructiontrial>
+	/stimulusframes = [1 = endinstructiontxt]
+	/correctresponse = (anyresponse)
+	/errormessage = false
+	/correctmessage = false
+	/recorddata = false
+</trial>
+
+<trial intervalinstructiontrial>
+	/stimulusframes = [1 = intervalinstructiontxt]
+	/correctresponse = (anyresponse)
+	/errormessage = false
+	/correctmessage = false
+	/recorddata = false
+</trial>
+
+<trial breakinstructiontrial>
+	/stimulusframes = [1 = breakinstructiontxt]
+	/correctresponse = (anyresponse)
+	/errormessage = false
+	/correctmessage = false
+	/recorddata = false
+</trial>
+
+***********************************
+**************************************
+//实验模块
+<block begininstructionblk>
+	/trials = [1 = begininstructiontrial]
+	/screencolor = (0, 0, 0)
+</block>
+
+<block target_concept_discrimination1_1>
+	/onblockbegin = [values.currenttarget1 = item.flowerlabel.item.1; values.currenttarget2 = item.wormlabel.item.1]
+	/trials = [1 = taskinstruction1trial; 2-51 = noreplace( flowertrialL, wormtrialR ); 52 = breakinstructiontrial]
+	/screencolor = (0, 0, 0)
+	/errormessage = (errortxt, 200) 
+	/correctmessage = (correctmsgtxt, 200)
+</block>
+
+<block target_concept_discrimination1_2>
+	/onblockbegin = [values.currenttarget2 = item.flowerlabel.item.1; values.currenttarget1 = item.wormlabel.item.1]
+	/trials = [1 = taskinstruction1trial; 2-51 = noreplace( flowertrialR, wormtrialL ); 52 = breakinstructiontrial]
+	/screencolor = (0, 0, 0)
+	/errormessage = (errortxt, 200) 
+	/correctmessage = (correctmsgtxt, 200)
+</block>
+
+<block target_concept_discrimination2_1>
+	/onblockbegin = [values.currenttarget1 = item.weaponlabel.item.1; values.currenttarget2 = item.musiclabel.item.1]
+	/trials = [1 = taskinstruction1trial; 2-51 = noreplace( weapontrialL, musictrialR ); 52 = breakinstructiontrial]
+	/screencolor = (0, 0, 0)
+	/errormessage = (errortxt, 200) 
+	/correctmessage = (correctmsgtxt, 200)
+</block>
+
+<block target_concept_discrimination2_2>
+	/onblockbegin = [values.currenttarget2 = item.weaponlabel.item.1; values.currenttarget1 = item.musiclabel.item.1]
+	/trials = [1 = taskinstruction1trial; 2-51 = noreplace( weapontrialR, musictrialL ); 52 = breakinstructiontrial]
+	/screencolor = (0, 0, 0)
+	/errormessage = (errortxt, 200) 
+	/correctmessage = (correctmsgtxt, 200)
+</block>
+
+<block evaluation_discrimination>
+	/onblockbegin = [values.currenttarget1 = item.positivelabel.item.1; values.currenttarget2 = item.negativelabel.item.1]
+	/trials = [1 = taskinstruction1trial; 2-51 = noreplace( positivetrial, negativetrial ); 52 = breakinstructiontrial]
+	/screencolor = (0, 0, 0)
+	/errormessage = (errortxt, 200) 
+	/correctmessage = (correctmsgtxt, 200)
+</block>
+
+<block combined_task1_1>
+	/onblockbegin = [values.currenttarget1 = item.flowerlabel.item.1; values.currenttarget2 = item.positivelabel.item.1; values.currenttarget3 = item.wormlabel.item.1; values.currenttarget4 = item.negativelabel.item.1]
+	/trials = [1 = taskinstruction2trial; 2-51 = noreplace( combine_flowerL_pos1, combine_flowerR_pos1, combine_flowerL_neg1, combine_flowerR_neg1); 52 = breakinstructiontrial]
+	/screencolor = (0, 0, 0)
+	/errormessage = (errortxt, 200) 
+	/correctmessage = (correctmsgtxt, 200)
+</block>
+
+<block combined_task1_2>
+	/onblockbegin = [values.currenttarget1 = item.flowerlabel.item.1; values.currenttarget2 = item.negativelabel.item.1; values.currenttarget3 = item.wormlabel.item.1; values.currenttarget4 = item.positivelabel.item.1]
+	/trials = [1 = taskinstruction2trial; 2-51 = noreplace( combine_flowerL_pos2, combine_flowerR_pos2, combine_flowerL_neg2, combine_flowerR_neg2); 52 = breakinstructiontrial]
+	/screencolor = (0, 0, 0)
+	/errormessage = (errortxt, 200) 
+	/correctmessage = (correctmsgtxt, 200)
+</block>
+
+<block combined_task2_1>
+	/onblockbegin = [values.currenttarget1 = item.weaponlabel.item.1; values.currenttarget2 = item.positivelabel.item.1; values.currenttarget3 = item.musiclabel.item.1; values.currenttarget4 = item.negativelabel.item.1]
+	/trials = [1 = taskinstruction2trial; 2-51 = noreplace( combine_weaponL_pos1, combine_weaponR_pos1, combine_weaponL_neg1, combine_weaponR_neg1); 52 = breakinstructiontrial]
+	/screencolor = (0, 0, 0)
+	/errormessage = (errortxt, 200) 
+	/correctmessage = (correctmsgtxt, 200)
+</block>
+
+<block combined_task2_2>
+	/ontrialbegin = [values.currenttarget1 = item.weaponlabel.item.1; values.currenttarget2 = item.negativelabel.item.1; values.currenttarget3 = item.musiclabel.item.1; values.currenttarget4 = item.positivelabel.item.1]
+	/trials = [1 = taskinstruction2trial; 2-51 = noreplace( combine_weaponL_pos2, combine_weaponR_pos2, combine_weaponL_neg2, combine_weaponR_neg2); 52 = breakinstructiontrial]
+	/screencolor = (0, 0, 0)
+	/errormessage = (errortxt, 200) 
+	/correctmessage = (correctmsgtxt, 200)
+</block>
+
+<block intervalinstructionblk>
+	/trials = [1 = intervalinstructiontrial]
+	/screencolor = (0, 0, 0)
+</block>
+
+<block endinstructionblk>
+	/trials = [1 = endinstructiontrial]
+	/screencolor = (0, 0, 0)
+</block>
+
+******************************************
+***************************************
+//被试间2×2平衡
+<expt>
+	/subjects = (1 of 4)
+	/groupassignment = groupnumber
+	/blocks = [1 = begininstructionblk; 2 = target_concept_discrimination1_1; 3 = evaluation_discrimination; 4 = combined_task1_1; 5 = target_concept_discrimination1_2; 6 = combined_task1_2; 7 = intervalinstructionblk; 8 = target_concept_discrimination2_1; 9 = combined_task2_1; 10 = target_concept_discrimination2_2; 11 = combined_task2_2; 12 = endinstructionblk]
+</expt>
+
+<expt>
+	/subjects = (2 of 4)
+	/groupassignment = groupnumber
+	/blocks = [1 = begininstructionblk; 2 = target_concept_discrimination1_2; 3 = evaluation_discrimination; 4 = combined_task1_1; 5 = target_concept_discrimination1_1; 6 = combined_task1_2; 7 = intervalinstructionblk; 8 = target_concept_discrimination2_2; 9 = combined_task2_1; 10 = target_concept_discrimination2_1; 11 = combined_task2_2; 12 = endinstructionblk]
+</expt>
+
+<expt>
+	/subjects = (3 of 4)
+	/groupassignment = groupnumber
+	/blocks = [1 = begininstructionblk; 2 = target_concept_discrimination1_2; 3 = evaluation_discrimination; 4 = combined_task1_2; 5 = target_concept_discrimination1_1; 6 = combined_task1_1; 7 = intervalinstructionblk; 8 = target_concept_discrimination2_2; 9 = combined_task2_2; 10 = target_concept_discrimination2_1; 11 = combined_task2_1; 12 = endinstructionblk]
+</expt>
+
+<expt>
+	/subjects = (4 of 4)
+	/groupassignment = groupnumber
+	/blocks = [1 = begininstructionblk; 2 = target_concept_discrimination1_1; 3 = evaluation_discrimination; 4 = combined_task1_2; 5 = target_concept_discrimination1_2; 6 = combined_task1_1; 7 = intervalinstructionblk; 8 = target_concept_discrimination2_1; 9 = combined_task2_2; 10 = target_concept_discrimination2_2; 11 = combined_task2_1; 12 = endinstructionblk]
+</expt>
+
+*******************************************************
+
+//变量，用来减少指导语的写入量
+<values>
+	/currenttarget1 = ""
+	/currenttarget2 = ""
+	/currenttarget3 = ""
+	/currenttarget4 = ""
+</values>

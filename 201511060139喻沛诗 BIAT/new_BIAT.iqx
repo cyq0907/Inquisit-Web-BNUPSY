@@ -1,0 +1,444 @@
+﻿// 喻沛诗 BIAT实验
+// 黑人、白人图片
+<item BlackLabel>
+	/1 = "黑人"
+</item>
+
+<item WhiteLabel>
+	/1 = "白人"
+</item>
+
+<item PosLabel>
+	/1 = "好"
+</item>
+
+<item NegLabel>
+	/1 = "坏"
+</item>
+
+========================
+//正负向词汇
+<item Black>
+	/1 = "黑人1.jpg"
+	/2 = "黑人2.jpg"
+	/3 = "黑人3.jpg"
+	/4 = "黑人4.jpg"
+</item>
+
+<item White>
+	/1 = "白人1.jpg"
+	/2 = "白人2.jpg"
+	/3 = "白人3.jpg"
+	/4 = "白人4.jpg"
+</item>
+
+<item Pos>
+	/1 = "有趣"
+	/2 = "极佳"
+	/3 = "豪华"
+	/4 = "完美"
+</item>
+
+<item Neg>
+	/1 = "可怕"
+	/2 = "糟糕"
+	/3 = "差劲"
+	/4 = "讨厌"
+</item>
+
+==============================
+//几个指导语
+<item BeginInstruction>
+	/1 = "在这个任务中，需要根据呈现的词汇和图片做出反应，如果呈现的是'<%item.poslabel.item.1%>'的词汇或者是'<%item.blacklabel.item.1%>'，'<%item.whitelabel.item.1%>'图片中的一个，请按~"I~"键；如果呈现的是'<%item.neglabel.item.1%>'或是'<%item.blacklabel.item.1%>'，'<%item.whitelabel.item.1%>'图片中的一个，请按~"E~"键，具体情况请按任务指导语进行~n~n~n请按任意键继续..."
+</item>
+
+<item TaskInstruction>
+	/1 = "如果呈现的是'<%values.currenttarget%>'或'<%item.poslabel.item.1%>'图片中的一个请按~"E~"键，其余图片或词汇请按~"I~"键~n~n~n~n请按任意键开始"
+</item>
+
+<item EndInstruction>
+	/1 = "实验结束，谢谢参与"
+</item>
+
+<item ShowPosInstruction>
+	/1 = "<%item.poslabel.item.1%>~n<%item.pos.item.1%> <%item.pos.item.2%> <%item.pos.item.3%> <%item.pos.item.4%>"
+</item>
+
+<item ShowNegInstruction>
+	/1 = "<%item.neglabel.item.1%>~n<%item.neg.item.1%> <%item.neg.item.2%> <%item.neg.item.3%> <%item.neg.item.4%>"
+</item>
+
+<item ShowBlackInstruction>
+	/1 = "<%item.blacklabel.item.1%>~n"
+</item>
+
+<item ShowWhiteInstruction>
+	/1 = "<%item.whitelabel.item.1%>~n"
+</item>
+
+********************************************
+********************************************
+//指导语
+<text BeginInstructiontxt>
+	/items = BeginInstruction
+	/size = (90%, 80%)
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/position = (50%, 40%)
+	/select = sequence
+	/resetinterval = 20
+	/valign = top
+	/hjustify = center
+	/vjustify = top
+</text>
+
+<text TaskInstructiontxt>
+	/items = TaskInstruction
+	/size = (90%, 50%)
+	/position = (50%, 50%)
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/valign = top
+	/hjustify = center
+	/vjustify = top
+</text>
+
+<text EndInstructiontxt>
+	/items = EndInstruction
+	/size = (90%, 50%)
+	/position = (50%, 50%)
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/valign = top
+	/hjustify = center
+	/vjustify = top
+</text>
+
+<text ShowNegInstructiontxt>
+	/items = ShowNegInstruction
+	/size = (8%, 50%)
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/position = (70%, 50%)
+	/txcolor = blue
+	/fontstyle = ("Arial", 5%)
+</text>
+
+<text ShowPosInstructiontxt>
+	/items = ShowPosInstruction
+	/size = (8%, 50%)
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/position = (30%, 50%)
+	/txcolor = blue
+	/fontstyle = ("Arial", 5%)
+</text>
+
+<text ShowBlackInstructiontxt>
+	/items = ShowBlackInstruction
+	/size = (50%, 50%)
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/position = (20%, 40%)
+	/fontstyle = ("Arial", 8%)
+</text>
+
+<text ShowWhiteInstructiontxt>
+	/items = ShowWhiteInstruction
+	/size = (50%, 50%)
+	/txbgcolor = (0, 0, 0)
+	/txcolor = (255, 255, 255)
+	/position = (80%, 40%)
+	/fontstyle = ("Arial", 8%)
+</text>
+
+<text OrInstructiontxt>
+	/items = ("or")
+	/position = (50%, 50%)
+	/txbgcolor = (0, 0, 0)
+	/fontstyle = ("Arial", 6%)
+	/txcolor = green
+	/size = (100, 100)
+</text>
+
+=================================
+//类标签
+<text NegLabeltxt>
+	/items = NegLabel
+	/fontstyle = ("Arial", 4%)
+	/txcolor = aqua
+	/txbgcolor = (0, 0, 0)
+</text>
+
+<text PosLabeltxt>
+	/items = PosLabel
+	/fontstyle = ("Arial", 4%)
+	/txcolor = aqua
+	/txbgcolor = (0, 0, 0)
+</text>
+
+<text BlackLabeltxt>
+	/items = BlackLabel
+	/fontstyle = ("Arial", 4%)
+	/txcolor = aqua
+	/txbgcolor = (0, 0, 0)
+</text>
+
+<text WhiteLabeltxt>
+	/items = WhiteLabel
+	/fontstyle = ("Arial", 4%)
+	/txcolor = aqua
+	/txbgcolor = (0, 0, 0)
+</text>
+
+===============================
+//材料设置
+<text Negtxt>
+	/items = Neg
+	/fontstyle = ("Arial", 15%)
+	/txcolor = blue
+	/txbgcolor = (0, 0, 0)
+</text>
+
+<text Postxt>
+	/items = Pos
+	/fontstyle = ("Arial", 15%)
+	/txcolor = blue
+	/txbgcolor = (0, 0, 0)
+</text>
+
+<text errortxt>
+	/items = ("×")
+	/fontstyle = ("Arial", 15%)
+	/color = red
+	/txbgcolor = (0, 0, 0)
+	/position = (50%, 75%)
+</text>
+
+<picture Blackpic>
+	/items = Black
+	/erase = true(0, 0, 0)
+	/valign = center
+	/size = (300, 300)
+</picture>
+
+<picture Whitepic>
+	/items = White
+	/erase = true(0, 0, 0)
+	/valign = center
+	/size = (300, 300)
+</picture>
+
+<picture Blackpic1>
+	/items = Black
+	/select = 1
+	/erase = true(0, 0, 0)
+	/size = (200, 200)
+	/position = (10%, 40%)
+</picture>
+
+<picture Blackpic2>
+	/items = Black
+	/select = 2
+	/erase = true(0, 0, 0)
+	/size = (200, 200)
+	/position = (30%, 40%)
+</picture>
+
+<picture Blackpic3>
+	/items = Black
+	/select = 3
+	/erase = true(0, 0, 0)
+	/size = (200, 200)
+	/position = (10%, 70%)
+</picture>
+
+<picture Blackpic4>
+	/items = Black
+	/select = 4
+	/erase = true(0, 0, 0)
+	/size = (200, 200)
+	/position = (30%, 70%)
+</picture>
+
+<picture Whitepic1>
+	/items = White
+	/select = 1
+	/erase = true(0, 0, 0)
+	/size = (200, 200)
+	/position = (70%, 40%)
+</picture>
+
+<picture Whitepic2>
+	/items = White
+	/select = 2
+	/erase = true(0, 0, 0)
+	/size = (200, 200)
+	/position = (90%, 40%)
+</picture>
+
+<picture Whitepic3>
+	/items = White
+	/select = 3
+	/erase = true(0, 0, 0)
+	/size = (200, 200)
+	/position = (70%, 70%)
+</picture>
+
+<picture Whitepic4>
+	/items = White
+	/select = 4
+	/erase = true(0, 0, 0)
+	/size = (200, 200)
+	/position = (90%, 70%)
+</picture>
+
+*********************************************************
+***********************************************************
+//刺激反应，被试平衡
+<trial Neg>
+	/stimulusframes = [1 = Negtxt]
+	/validresponse = ("E", "I")
+	/correctresponse = ("I")
+	/posttrialpause = 250
+</trial>
+
+<trial Pos>
+	/stimulusframes = [1 = Postxt]
+	/validresponse = ("E", "I")
+	/correctresponse = ("E")
+	/posttrialpause = 250
+</trial>
+
+<trial BlackL>
+	/stimulusframes = [1 = Blackpic]
+	/validresponse = ("E", "I")
+	/correctresponse = ("E")
+	/posttrialpause = 250
+	/errormessage = (errortxt, 200)
+</trial>
+
+<trial BlackR>
+	/stimulusframes = [1 = Blackpic]
+	/validresponse = ("E", "I")
+	/correctresponse = ("I")
+	/posttrialpause = 250
+	/errormessage = (errortxt, 200)
+</trial>
+
+<trial WhiteL>
+	/stimulusframes = [1 = Whitepic]
+	/validresponse = ("E", "I")
+	/correctresponse = ("E")
+	/posttrialpause = 250
+	/errormessage = (errortxt, 200)
+</trial>
+
+<trial WhiteR>
+	/stimulusframes = [1 = Whitepic]
+	/validresponse = ("E", "I")
+	/correctresponse = ("I")
+	/posttrialpause = 250
+	/errormessage = (errortxt, 200)
+</trial>
+
+===========================================
+//指导语的trial
+<trial BeginInstructiontrial>
+	/stimulusframes = [1 = BeginInstructiontxt]
+	/correctresponse = (anyresponse)
+	/errormessage = false
+	/recorddata = false
+</trial>
+
+<trial TaskInstructiontrial>
+	/stimulusframes = [1 = TaskInstructiontxt]
+	/correctresponse = (anyresponse)
+	/errormessage = false
+	/recorddata = false
+</trial>
+
+<trial EndInstructiontrial>
+	/stimulusframes = [1 = EndInstructiontxt]
+	/correctresponse = (anyresponse)
+	/errormessage = false
+	/recorddata = false
+</trial>
+
+<trial ShowN_PInstructiontrial>
+	/stimulusframes = [1 = ShowNegInstructiontxt, OrInstructiontxt, ShowPosInstructiontxt]
+	/correctresponse = (anyresponse)
+	/errormessage = false
+	/recorddata = false
+</trial>
+
+<trial ShowB_WInstructiontrial>
+	/stimulusframes = [1 = ShowBlackInstructiontxt, OrInstructiontxt, ShowWhiteInstructiontxt, Blackpic1, Blackpic2, Blackpic3, Blackpic4, Whitepic1, Whitepic2, Whitepic3, Whitepic4]
+	/correctresponse = (anyresponse)
+	/errormessage = false
+	/recorddata = false
+</trial>
+
+*************************************************************
+************************************************************
+//指导语block
+<block BeginInstructionblk>
+	/trials = [1 = BeginInstructiontrial; 2 = ShowN_PInstructiontrial; 3 = ShowB_WInstructiontrial]
+	/screencolor = (0, 0, 0)
+</block>
+
+<block BlackLtest>
+	/onblockbegin = [values.currenttarget = item.blacklabel.item.1]
+	/trials = [1 = TaskInstructiontrial; 2-5 = noreplace( BlackL, WhiteR ); 7,9,11,13 = noreplace( BlackL, WhiteR ); 6,8,10,12 = noreplace( Neg, Pos )]
+	/errormessage = (errortxt, 200) 
+	/screencolor = (0, 0, 0)
+</block>
+
+<block WhiteLtest>
+	/onblockbegin = [values.currenttarget = item.whitelabel.item.1]
+	/trials = [1 = TaskInstructiontrial; 2-5 = noreplace( BlackR, WhiteL ); 7,9,11,13 = noreplace( BlackR, WhiteL ); 6,8,10,12 = noreplace( Neg, Pos)]
+	/errormessage = (errortxt, 200)
+	/screencolor = (0, 0, 0)
+</block>
+
+<block BlackL>
+	/onblockbegin = [values.currenttarget = item.blacklabel.item.1]
+	/trials = [1 = TaskInstructiontrial; 2-5 = noreplace( BlackL, WhiteR ); 7,9,11,13,15,17,19,21 = noreplace( BlackL, WhiteR ); 6,8,10,12,14,16,18,20 = noreplace( Neg, Pos )]
+	/errormessage = true(errortxt, 200)
+	/screencolor = (0, 0, 0)
+</block>
+
+<block WhiteL>
+	/onblockbegin = [values.currenttarget = item.whitelabel.item.1]
+	/trials = [1 = TaskInstructiontrial; 2-5 = noreplace( BlackR, WhiteL ); 7,9,11,13,15,17,19,21 = noreplace( BlackR, WhiteL ); 6,8,10,12,14,16,18,20 = noreplace( Neg, Pos)]
+	/errormessage = true(errortxt, 200)
+	/screencolor = (0, 0, 0)
+</block>
+
+<block EndInstructionblk>
+	/trials = [1 = EndInstructiontrial]
+	/screencolor = (0, 0, 0)
+</block>
+
+**********************************************************
+********************************************************
+<expt>
+	/subjects = ( 1 of 2 )
+	/blocks = [1 = BeginInstructionblk; 2 = BlackLtest; 3 = WhiteLtest; 4 = BlackL; 5 = WhiteL; 6 = BlackL; 7 = WhiteL; 8 = EndInstructionblk]
+</expt>
+
+<expt>
+	/subjects = ( 2 of 2 )
+	/blocks = [1 = BeginInstructionblk; 2 = WhiteLtest; 3 = BlackLtest; 4 = WhiteL; 5 = BlackL; 6 = WhiteL; 7 = BlackL; 8 = EndInstructionblk]
+</expt>
+
+****************************************************
+*****************************************************
+
+<values>
+	/CurrentTarget = ""
+</values>
+
+
+
+
