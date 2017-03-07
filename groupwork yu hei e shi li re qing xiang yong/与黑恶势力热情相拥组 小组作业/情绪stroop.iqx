@@ -1,0 +1,543 @@
+﻿
+<values>
+/fixationcrosspresentationtime = 500
+/keyred = 32
+/redlabel = "d"
+/keygreen = 33
+/greenlabel = "f"
+/keyblue = 36
+/bluelabel = "j"
+/keyyellow = 37
+/yellowlabel = "k"
+</values>
+
+
+<item aggression>
+/1 = "rage"
+/2 = "anger"
+/3 = "tear"
+/4 = "assault"
+/5 = "kick"
+/6 = "shout"
+/7 = "punch"
+/8 = "hate"
+/9 = "argue"
+/10 = "temper"
+/11 = "fight"
+/12 = "kill"
+/13 = "punish"
+/14 = "annoyed"
+/15 = "guilt"
+/16 = "lust"
+/17 = "crush"
+/18 = "slash"
+/19 = "rape"
+/20 = "cut"
+/21 = "wound"
+/22 = "injure"
+/23 = "threaten"
+/24 = "knife"
+/25 = "slap"
+</item>
+
+
+<item positivewords>
+/1 = "devotion"
+/2 = "affection"
+/3 = "admire"
+/4 = "euphoric"
+/5 = "fond"
+/6 = "grateful"
+/7 = "tolerant"
+/8 = "affectionate"
+/9 = "amused"
+/10 = "love"
+/11 = "joy"
+/12 = "proud"
+/13 = "fond"
+/14 = "funny"
+/15 = "glad"
+/16 = "comfortable"
+/17 = "beloved"
+/18 = "calm"
+/19 = "peace"
+/20 = "daring"
+/21 = "cheerful"
+/22 = "warm"
+/23 = "protective"
+/24 = "hope"
+/25 = "lively"
+</item>
+
+<item negativewords>
+/1 = "abandoned"
+/2 = "abused"
+/3 = "afraid"
+/4 = "aggressive"
+/5 = "agony"
+/6 = "angry"
+/7 = "arrogant"
+/8 = "bad"
+/9 = "bitchy"
+/10 = "crazy"
+/11 = "cruelty"
+/12 = "detest"
+/13 = "envy"
+/14 = "fear"
+/15 = "frightened"
+/16 = "fury"
+/17 = "glum"
+/18 = "greed"
+/19 = "hateful"
+/20 = "spiteful"
+/21 = "suspicious"
+/22 = "rage"
+/23 = "pain"
+/24 = "lose"
+/25 = "misery"
+</item>
+
+<item neutralwords>
+/1 = "door"
+/2 = "group"
+/3 = "chair"
+/4 = "telephone"
+/5 = "dog"
+/6 = "coat"
+/7 = "sofa"
+/8 = "bag"
+/9 = "diary"
+/10 = "newspaper"
+/11 = "eat"
+/12 = "oven"
+/13 = "floor"
+/14 = "shopping"
+/15 = "umbrella"
+/16 = "windy"
+/17 = "radio"
+/18 = "painting"
+/19 = "milk"
+/20 = "school"
+/21 = "ball"
+/22 = "pencil"
+/23 = "cigarette"
+/24 = "football"
+/25 = "shoe"
+</item>
+
+<item colorwords>
+/1 ="purple"
+/2 ="gray"
+/3 ="flesh"
+/4 ="pink"	
+/5 = "orange"
+/6 = "scarlet"
+/7 = "maroon"
+/8 = "crimson"
+/9 = "white"
+/10 = "black"
+/11 = "cyan"
+/12 = "brown"
+/13 = "tin"
+/14 = "bronze"
+/15 = "mauve"
+/16 = "gold"
+/17 = "silver"
+/18 = "jade"
+/19 = "topaz"
+/20 = "emerald"
+/21 = "purple"
+/22 = "gray"
+/23 = "flesh"
+/24 = "pink"
+/25 = "orange"	  		
+</item>
+
+<item practicewords>
+/1 = "one"
+/2 = "two"
+/3 = "three"
+/4 = "four"
+/5 = "five"
+/6 = "six"
+/7 = "seven"
+/8 = "eight"
+/9 = "nine"
+/10 = "ten"
+</item>
+
+
+<instruct>
+/windowsize = (90%, 90%)
+/nextkey=(" ")
+/nextlabel = "Space Bar"
+/finishlabel = "Space Bar"
+/ fontstyle = ("Arial", 3%, true, false, false, false, 5, 1)
+/ txcolor = (0, 0, 0)
+</instruct>
+
+<page intro>
+^In the following trials you will see words presented in different colors.
+^^Your task is to indicate the COLOR in which each word is printed in while ignoring what the words actually say. 
+
+^^Indicate the color of the word by pressing either of the following keys:
+^- <%values.redlabel%>   for red words
+^- <%values.greenlabel%>  for green words
+^- <%values.bluelabel%>  for blue words
+^- <%values.yellowlabel%>  for yellow words
+
+^^Try to respond as quickly and accurately as you can, because you will be timed. If an incorrect response is made, a red X will be flashed on the screen.
+
+^^Place your index and middle fingers on the <%values.redlabel%>, <%values.greenlabel%>, <%values.bluelabel%>, and <%values.yellowlabel%>
+keys so that you are ready to respond.
+
+^^Press the space bar to start some practice trials.
+</page>
+
+
+<page test>
+Practice is over. If you have any questions, please ask them now.
+^^^^REMINDER:
+^In the following trials you will see words presented in different colors.
+^^Your task is to indicate the COLOR in which each word is printed in while ignoring what the words actually say. 
+^^Indicate the color of the word by pressing either of the following keys:
+^- <%values.redlabel%>   for red words
+^- <%values.greenlabel%>  for green words
+^- <%values.bluelabel%>  for blue words
+^- <%values.yellowlabel%>  for yellow words
+
+^^Try to respond as quickly and accurately as you can, because you will be timed. If an incorrect response is made, a red X will be flashed on the screen.
+
+^^Place your index and middle fingers on the <%values.redlabel%>, <%values.greenlabel%>, <%values.bluelabel%>, and <%values.yellowlabel%>
+keys so that you are ready to respond.
+
+^^Press the space bar to start.
+</page>
+
+<page end>
+This concludes the task. Thank you for your participation!
+</page>
+
+
+
+<data>
+/file = "EmotionalStroopKI_raw.iqdat"
+/separatefiles = true 
+/ columns = [date time subject blocknum blockcode trialnum trialcode values.target values.color  
+			response correct latency] 
+</data>
+
+
+<defaults>
+/minimumversion = "4.0.6.0"
+/canvasaspectratio = (4,3)
+/ screencolor = white
+/ fontstyle = ("Arial", 6.00%, true, false, false, false, 5, 1)
+/ txbgcolor = white
+/ txcolor = black
+/ inputdevice = keyboard
+</defaults>
+
+
+<values>
+/completed = 0
+/target = 0
+/color = 0
+/correct = 0
+/correct_aggressionwords = 0
+/correct_negativewords = 0
+/correct_neutralwords = 0
+/correct_positivewords = 0
+/correct_colorwords = 0
+
+/sumRT_Agg = 0
+/sumRT_Neg = 0
+/sumRT_Neu = 0
+/sumRT_Pos = 0
+/sumRT_Col = 0
+</values>
+
+<expressions>
+/percCorrect_Agg = (values.correct_aggressionwords/trial.aggression.trialcount) * 100
+/percCorrect_Neg = (values.correct_negativewords/trial.negativeword.trialcount) * 100
+/percCorrect_Neu = (values.correct_neutralwords/trial.neutralword.trialcount) * 100
+/percCorrect_Col = (values.correct_colorwords/trial.colorword.trialcount) * 100
+/percCorrect_Pos = (values.correct_positivewords/trial.positiveword.trialcount) * 100
+
+/meanRT_Agg = values.sumrt_agg/values.correct_aggressionwords
+/meanRT_Neg = values.sumrt_neg/values.correct_negativewords
+/meanRT_Neu = values.sumrt_neu/values.correct_neutralwords
+/meanRT_Pos = values.sumrt_pos/values.correct_positivewords
+/meanRT_Col = values.sumrt_col/values.correct_colorwords
+
+/Bias_Agg = expressions.meanrt_agg - expressions.meanrt_neu
+/Bias_Neg = expressions.meanrt_neg - expressions.meanrt_neu
+/Bias_Pos = expressions.meanrt_pos - expressions.meanrt_neu
+/Bias_Col = expressions.meanrt_col - expressions.meanrt_neu
+</expressions>
+
+
+<text Aggression>
+/ items = aggression
+/select = noreplace
+/onprepare = [text.aggression.textcolor = list.aggression_selectcolor.nextvalue]
+</text>
+
+<text PositiveWord>
+/ items = positivewords
+/select = noreplace
+/onprepare = [text.PositiveWord.textcolor = list.PositiveWord_selectcolor.nextvalue]
+</text>
+
+<text NegativeWord>
+/ items = negativewords
+/select = noreplace
+/onprepare = [text.NegativeWord.textcolor = list.NegativeWord_selectcolor.nextvalue]
+</text>
+
+<text NeutralWord>
+/ items = neutralwords
+/select = noreplace
+/onprepare = [text.NeutralWord.textcolor = list.NeutralWord_selectcolor.nextvalue]
+</text>
+
+<text colorword>
+/items = colorwords
+/onprepare = [text.colorword.textcolor = list.colorword_selectcolor.nextvalue]
+</text>
+
+<text practiceword>
+/items = practicewords
+/onprepare = [text.practiceword.textcolor = list.practiceword_selectcolor.nextvalue]
+</text>
+
+<text x>
+/ items = ("X")
+/ position = (50, 60)
+/ fontstyle = ("Arial", 7%, true, false, false, false, 5, 0)
+/txcolor = red 
+</text>
+
+<text fixation>
+/ items = ("+")
+/ color = (black)
+</text>
+
+<text redreminder>
+/ items = ("<%values.redlabel%> = red")
+/ position = (20%, 20%)
+/ fontstyle = ("Arial", 3%, true, false, false, false, 5, 0)
+/ erase = false
+/ txcolor = darkgray
+</text>
+
+<text greenreminder>
+/ items = ("<%values.greenlabel%> = green")
+/ position = (40%, 20%)
+/ fontstyle = ("Arial", 3%, true, false, false, false, 5, 0)
+/ erase = false
+/ txcolor = darkgray
+</text>
+
+<text bluereminder>
+/ items = ("<%values.bluelabel%> = blue")
+/ position = (60%, 20%)
+/ fontstyle = ("Arial", 3%, true, false, false, false, 5, 0)
+/ erase = false
+/ txcolor = darkgray
+</text>
+
+<text yellowreminder>
+/ items = ("<%values.yellowlabel%> = yellow")
+/ position = (80%, 20%)
+/ fontstyle = ("Arial", 3%, true, false, false, false, 5, 0)
+/ erase = false
+/ txcolor = darkgray
+</text>
+
+<text ready>
+/items=("Press the space bar when you are ready to start")
+/color = (100,100,100)
+/txbgcolor = (transparent)
+/size = (400, 200)
+/ fontstyle = ("Arial", 3%, true, false, false, false, 5, 1)
+</text>
+
+
+<list Aggression_selectcolor>
+/items = (red, green, blue, yellow)
+/replace = false
+</list>
+
+<list PositiveWord_selectcolor>
+/items = (red, green, blue, yellow)
+/replace = false
+</list>
+
+<list NegativeWord_selectcolor>
+/items = (red, green, blue, yellow)
+/replace = false
+</list>
+
+<list NeutralWord_selectcolor>
+/items = (red, green, blue, yellow)
+/replace = false
+</list>
+
+<list colorword_selectcolor>
+/items = (red, green, blue, yellow)
+/replace = false
+</list>
+
+<list practiceword_selectcolor>
+/items = (red, green, blue, yellow)
+/replace = false
+</list>
+
+
+<trial practiceword>
+/ontrialbegin = [trial.practiceword.insertstimulustime(text.practiceword, values.fixationcrosspresentationtime)]
+/ontrialend = [trial.practiceword.resetstimulusframes()]
+/stimulustimes = [0=fixation, redreminder, greenreminder, bluereminder, yellowreminder]
+/recorddata = true
+/ isvalidresponse = [trial.practiceword.response == values.keyyellow || trial.practiceword.response == values.keyred ||
+						trial.practiceword.response == values.keyblue || trial.practiceword.response == values.keygreen]
+/monkeyresponse = (32, 33, 36, 37)
+/iscorrectresponse = [		(text.practiceword.textcolor == yellow && trial.practiceword.response == values.keyyellow) ||
+							(text.practiceword.textcolor == red && trial.practiceword.response == values.keyred) ||
+							(text.practiceword.textcolor == blue && trial.practiceword.response == values.keyblue) ||
+							(text.practiceword.textcolor == green && trial.practiceword.response == values.keygreen)]
+/ontrialend = [if (text.practiceword.textcolor == yellow) values.color = "yellow"
+				else if (text.practiceword.textcolor == red) values.color = "red"
+				else if (text.practiceword.textcolor == blue) values.color = "blue"
+				else values.color = "green"]
+/ontrialend = [values.target = text.practiceword.currentitem]
+/ errormessage = true(x, 400)
+</trial>
+
+
+<trial Aggression> 
+/ontrialbegin = [trial.Aggression.insertstimulustime(text.Aggression, values.fixationcrosspresentationtime)]
+/stimulustimes = [0=fixation, redreminder, greenreminder, bluereminder, yellowreminder]
+/ isvalidresponse = [trial.aggression.response == values.keyyellow || trial.aggression.response == values.keyred ||
+						trial.aggression.response == values.keyblue || trial.aggression.response == values.keygreen]
+/monkeyresponse = (32, 33, 36, 37)
+/iscorrectresponse = [		(text.aggression.textcolor == yellow && trial.aggression.response == values.keyyellow) ||
+							(text.aggression.textcolor == red && trial.aggression.response == values.keyred) ||
+							(text.aggression.textcolor == blue && trial.aggression.response == values.keyblue) ||
+							(text.aggression.textcolor == green && trial.aggression.response == values.keygreen)]
+/ontrialend = [trial.Aggression.resetstimulusframes()]
+/ontrialend = [values.target = text.aggression.currentitem]
+/ontrialend = [if (text.aggression.textcolor == yellow) values.color = "yellow"
+				else if (text.aggression.textcolor == red) values.color = "red"
+				else if (text.aggression.textcolor == blue) values.color = "blue"
+				else values.color = "green"]
+/ontrialend = [if (trial.aggression.correct) {values.correct_aggressionwords += 1; values.sumrt_agg += trial.aggression.latency}]
+/ errormessage = true(x, 400)
+</trial>
+
+<trial PositiveWord> 
+/ontrialbegin = [trial.PositiveWord.insertstimulustime(text.PositiveWord, values.fixationcrosspresentationtime)]
+/stimulustimes = [0=fixation, redreminder, greenreminder, bluereminder, yellowreminder]
+/ isvalidresponse = [trial.PositiveWord.response == values.keyyellow || trial.PositiveWord.response == values.keyred ||
+						trial.PositiveWord.response == values.keyblue || trial.PositiveWord.response == values.keygreen]
+/monkeyresponse = (32, 33, 36, 37)
+/iscorrectresponse = [		(text.PositiveWord.textcolor == yellow && trial.PositiveWord.response == values.keyyellow) ||
+							(text.PositiveWord.textcolor == red && trial.PositiveWord.response == values.keyred) ||
+							(text.PositiveWord.textcolor == blue && trial.PositiveWord.response == values.keyblue) ||
+							(text.PositiveWord.textcolor == green && trial.PositiveWord.response == values.keygreen)]
+/ontrialend = [trial.PositiveWord.resetstimulusframes()]
+/ontrialend = [values.target = text.PositiveWord.currentitem]
+/ontrialend = [if (text.PositiveWord.textcolor == yellow) values.color = "yellow"
+				else if (text.PositiveWord.textcolor == red) values.color = "red"
+				else if (text.PositiveWord.textcolor == blue) values.color = "blue"
+				else values.color = "green"]
+/ontrialend = [if (trial.PositiveWord.correct) {values.correct_positivewords += 1; values.sumrt_pos += trial.positiveword.latency}]
+/ errormessage = true(x, 400)
+</trial>
+
+<trial NegativeWord> 
+/ontrialbegin = [trial.NegativeWord.insertstimulustime(text.NegativeWord, values.fixationcrosspresentationtime)]
+/stimulustimes = [0=fixation, redreminder, greenreminder, bluereminder, yellowreminder]
+/ isvalidresponse = [trial.NegativeWord.response == values.keyyellow || trial.NegativeWord.response == values.keyred ||
+						trial.NegativeWord.response == values.keyblue || trial.NegativeWord.response == values.keygreen]
+/monkeyresponse = (32, 33, 36, 37)
+/iscorrectresponse = [		(text.NegativeWord.textcolor == yellow && trial.NegativeWord.response == values.keyyellow) ||
+							(text.NegativeWord.textcolor == red && trial.NegativeWord.response == values.keyred) ||
+							(text.NegativeWord.textcolor == blue && trial.NegativeWord.response == values.keyblue) ||
+							(text.NegativeWord.textcolor == green && trial.NegativeWord.response == values.keygreen)]
+/ontrialend = [trial.NegativeWord.resetstimulusframes()]
+/ontrialend = [values.target = text.NegativeWord.currentitem]
+/ontrialend = [if (text.NegativeWord.textcolor == yellow) values.color = "yellow"
+				else if (text.NegativeWord.textcolor == red) values.color = "red"
+				else if (text.NegativeWord.textcolor == blue) values.color = "blue"
+				else values.color = "green"]
+/ontrialend = [if (trial.NegativeWord.correct) {values.correct_negativewords += 1; values.sumrt_neg += trial.negativeword.latency}]
+/ errormessage = true(x, 400)
+</trial>
+
+<trial NeutralWord> 
+/ontrialbegin = [trial.NeutralWord.insertstimulustime(text.NeutralWord, values.fixationcrosspresentationtime)]
+/stimulustimes = [0=fixation, redreminder, greenreminder, bluereminder, yellowreminder]
+/ isvalidresponse = [trial.NeutralWord.response == values.keyyellow || trial.NeutralWord.response == values.keyred ||
+						trial.NeutralWord.response == values.keyblue || trial.NeutralWord.response == values.keygreen]
+/monkeyresponse = (32, 33, 36, 37)
+/iscorrectresponse = [		(text.NeutralWord.textcolor == yellow && trial.NeutralWord.response == values.keyyellow) ||
+							(text.NeutralWord.textcolor == red && trial.NeutralWord.response == values.keyred) ||
+							(text.NeutralWord.textcolor == blue && trial.NeutralWord.response == values.keyblue) ||
+							(text.NeutralWord.textcolor == green && trial.NeutralWord.response == values.keygreen)]
+/ontrialend = [trial.NeutralWord.resetstimulusframes()]
+/ontrialend = [values.target = text.NeutralWord.currentitem]
+/ontrialend = [if (text.NeutralWord.textcolor == yellow) values.color = "yellow"
+				else if (text.NeutralWord.textcolor == red) values.color = "red"
+				else if (text.NeutralWord.textcolor == blue) values.color = "blue"
+				else values.color = "green"]
+/ontrialend = [if (trial.NeutralWord.correct) {values.correct_neutralwords += 1; values.sumrt_neu += trial.neutralword.latency}]
+/ errormessage = true(x, 400)
+</trial>
+
+<trial ColorWord>
+/ontrialbegin = [trial.ColorWord.insertstimulustime(text.colorword, values.fixationcrosspresentationtime)]
+/stimulustimes = [0=fixation, redreminder, greenreminder, bluereminder, yellowreminder]
+/ isvalidresponse = [trial.ColorWord.response == values.keyyellow || trial.ColorWord.response == values.keyred ||
+						trial.ColorWord.response == values.keyblue || trial.ColorWord.response == values.keygreen]
+/monkeyresponse = (32, 33, 36, 37)
+/iscorrectresponse = [		(text.ColorWord.textcolor == yellow && trial.ColorWord.response == values.keyyellow) ||
+							(text.ColorWord.textcolor == red && trial.ColorWord.response == values.keyred) ||
+							(text.ColorWord.textcolor == blue && trial.ColorWord.response == values.keyblue) ||
+							(text.ColorWord.textcolor == green && trial.ColorWord.response == values.keygreen)]
+/ontrialend = [trial.ColorWord.resetstimulusframes()]
+/ontrialend = [values.target = text.ColorWord.currentitem]
+/ontrialend = [if (text.ColorWord.textcolor == yellow) values.color = "yellow"
+				else if (text.ColorWord.textcolor == red) values.color = "red"
+				else if (text.ColorWord.textcolor == blue) values.color = "blue"
+				else values.color = "green"]
+/ontrialend = [if (trial.ColorWord.correct) {values.correct_colorwords += 1; values.sumrt_col += trial.colorword.latency}]
+/ errormessage = true(x, 400)
+</trial>
+
+
+<trial ready>
+/stimulustimes = [0=ready]
+/correctresponse = (" ")
+/inputdevice = keyboard
+/recorddata = false
+</trial>
+
+<block Practice_EmotionalStroop>
+/preinstructions = (intro)
+/ trials = [1 = ready; 2-11 = practiceword]
+</block>
+
+<block EmotionalStroop>
+/preinstructions =(test)
+/ trials = [1 = ready; 2-126 =noreplace(Aggression,PositiveWord,NegativeWord, NeutralWord, ColorWord)]
+</block>
+
+
+
+<expt>
+/ blocks = [1=Practice_EmotionalStroop; 2 = EmotionalStroop]
+/ postinstructions = (end)
+/onexptend = [values.completed = 1]
+</expt>
