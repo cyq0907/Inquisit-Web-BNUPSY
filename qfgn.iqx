@@ -1,0 +1,588 @@
+﻿*平衡设计
+<expt>
+/ subjects = (1 of 2)
+/ preinstructions = (instruction1, instruction2, instruction4, instruction5, consent, begin1, begin2)
+/ postinstructions = (end)
+/ blocks = [1=Target1_practice;
+            2=ATTRIB_practice; 
+		3=Pairing1_practice; 
+            4=Pairing1_test;
+            5=Target2_practice_Pairing1_1st; 
+		6=Pairing2_practice;
+            7=Pairing2_test]
+</expt>
+
+<expt>
+/ subjects = (2 of 2)
+/ preinstructions = (instruction1, instruction2, instruction4, instruction5, consent, begin1, begin2)
+/ postinstructions = (end)
+/ blocks = [1=Target2_practice;
+            2=ATTRIB_practice;
+		3=Pairing2_practice; 
+            4=Pairing2_test;
+            5=Target1_practice_Pairing2_1st; 
+		6=Pairing1_practice;
+            7=Pairing1_test]
+</expt>
+
+*数据收集
+<data>
+/ columns = 
+  [date time subject blocknum blockcode trialnum trialcode latency response correct
+   stimulusitem]
+/ labels = TRUE
+/ header = TRUE
+/ format = TAB
+</data>
+
+*默认值
+<defaults>
+/ screencolor = (180, 180, 181)
+/ font = ("宋体", -48, 700, 0, 34)
+/ txcolor = (0, 0, 0)
+/ validkeys = ("d", " ", "k")
+/ pretrialpause = 200
+/ posttrialpause = 200
+/ blockfeedback = (correct, medianlatency)
+/ endlock = true
+</defaults>
+
+
+*定义各个block
+<block ATTRIB_practice>
+/ preinstructions = (see)
+/ bgstim = (INSTR_D, INSTR_K, ATTR_left, ATTR_right)
+/ trials = [1=attrib_spacebar; 
+    2-11 = random(ATTRleft, ATTRright); 12-21 = random(ATTRleft, ATTRright)]
+/ errormessage = true(error,200)
+/ responsemode = correct
+</block>
+
+<block Target2_practice>
+/ preinstructions = (see)
+/ bgstim = (INSTR_D, INSTR_K, TARG1_left, TARG2_right)
+/ trials = [1=practice; 
+    2-11 = random(TARG1left, TARG2right); 12-21 = random(TARG1left, TARG2right)]
+/ errormessage = true(error,200)
+/ responsemode = correct
+</block>
+
+<block Target2_practice_Pairing1_1st>
+/ preinstructions = (switch)
+/ bgstim = (INSTR_D, INSTR_K, TARG1_left, TARG2_right)
+/ trials = [1=practice; 2-11 = random(TARG1left, TARG2right);
+    12-21 = random(TARG1left, TARG2right); 22-31 = random(TARG1left, TARG2right)]
+/ errormessage = true(error,200)
+/ responsemode = correct
+</block>
+
+<block Target1_practice>
+/ preinstructions = (see)
+/ bgstim = (INSTR_D, INSTR_K, TARG2_left, TARG1_right)
+/ trials = [1=practice; 
+    2-11 = random(TARG2left, TARG1right); 12-21 = random(TARG2left, TARG1right)]
+/ errormessage = true(error,200)
+/ responsemode = correct
+</block>
+
+<block Target1_practice_Pairing2_1st>
+/ preinstructions = (switch)
+/ bgstim = (INSTR_D, INSTR_K, TARG2_left, TARG1_right)
+/ trials = [1=practice; 2-11 = random(TARG2left, TARG1right); 
+    12-21 = random(TARG2left, TARG1right); 22-31 = random(TARG2left, TARG1right)]
+/ errormessage = true(error,200)
+/ responsemode = correct
+</block>
+
+<block Pairing2_practice>
+/ preinstructions = (see)
+/ bgstim = (INSTR_D, INSTR_K, ATTR_left, TARG1_left, 
+     OR_left, OR_right, ATTR_right, TARG2_right)
+/ trials = [1=practice; 2,4,6,8=random(TARG1left, TARG2right); 10,12,14,16=
+  random(TARG1left, TARG2right); 18,20,22,24=random(TARG1left, TARG2right);
+  3,5,7,9=random(ATTRleft, ATTRright); 11,13,15,17=random(ATTRleft, ATTRright);
+  19,21,23,25=random(ATTRleft, ATTRright)]
+/ errormessage = true(error,200)
+/ responsemode = correct
+</block>
+
+<block Pairing2_test>
+/ preinstructions = (see)
+/ bgstim = (INSTR_D, INSTR_K, ATTR_left, TARG1_left, 
+     OR_left, OR_right, ATTR_right, TARG2_right)
+/ trials =  [1=test; 2,4,6,8=random(TARG1left, TARG2right); 10,12,14,16=
+  random(TARG1left, TARG2right); 18,20,22,24=random(TARG1left, TARG2right); 
+  26,28,30,32=random(TARG1left, TARG2right); 34,36,38,40=random(TARG1left, TARG2right);
+  3,5,7,9=random(ATTRleft, ATTRright); 11,13,15,17=random(ATTRleft, ATTRright);
+  19,21,23,25=random(ATTRleft, ATTRright); 27,29,31,33=random(ATTRleft, ATTRright);
+  35,37,39,41=random(ATTRleft, ATTRright)]
+/ errormessage = true(error,200)
+/ responsemode = correct
+</block>
+
+<block Pairing1_practice>
+/ preinstructions = (see)
+/ bgstim = (INSTR_D, INSTR_K, ATTR_left, TARG2_left,
+    OR_left, OR_right, ATTR_right, TARG1_right)
+/ trials = [1=practice; 2,4,6,8=random(TARG2left, TARG1right); 10,12,14,16=
+  random(TARG2left, TARG1right); 18,20,22,24=random(TARG2left, TARG1right);
+  3,5,7,9=random(ATTRleft, ATTRright); 11,13,15,17=random(ATTRleft, ATTRright);
+  19,21,23,25=random(ATTRleft, ATTRright)]
+/ errormessage = true(error,200)
+/ responsemode = correct
+</block>
+
+<block Pairing1_test>
+/ preinstructions = (see)
+/ bgstim = (INSTR_D, INSTR_K, ATTR_left, TARG2_left,
+     OR_left, OR_right, ATTR_right, TARG1_right)
+/ trials =  [1=test; 2,4,6,8=random(TARG2left, TARG1right); 10,12,14,16=
+  random(TARG2left, TARG1right); 18,20,22,24=random(TARG2left, TARG1right); 
+  26,28,30,32=random(TARG2left, TARG1right); 34,36,38,40=random(TARG2left, TARG1right);
+  3,5,7,9=random(ATTRleft, ATTRright); 11,13,15,17=random(ATTRleft, ATTRright);
+  19,21,23,25=random(ATTRleft, ATTRright); 27,29,31,33=random(ATTRleft, ATTRright);
+  35,37,39,41=random(ATTRleft, ATTRright)]
+/ errormessage = true(error,200)
+/ responsemode = correct
+</block>
+
+
+<page begin2>
+^^在这个分类任务中，你将要区分“花”和“虫”。
+^^在另一个分类任务中，你将要区分积极的形容词和消极的形容词。
+^^在每一任务中，请按照事物应该属于的类别为标准进行分类
+</page>
+
+<text ATTR_left>  
+/ numitems = 1
+/ items = ("积极的")
+/ font = ("宋体", -40, 700, 0, 34)
+/ position = (25, 17)
+/ color = (0, 0, 255)
+/ txbgcolor = (180,180,181)
+</text>
+
+<text ATTRL>
+/ items = ATTRL
+/ erase = true (180, 180, 181)
+/ numitems = 6
+/ color = (0, 0, 255)
+/ txbgcolor = (180,180,181)
+</text >
+
+<item ATTRL>
+/1="美丽的"
+/2="快乐的"
+/3="宜人的"
+/4="欢快的"
+/5="欣喜的"
+/6="活泼的"
+/7="兴奋的"
+/8="有趣的"
+/9="高兴的"
+/10="愉悦的"
+/11="可爱的"
+/12="积极的"
+/13="喜悦的"
+/14="萌萌的"
+/15="适宜的"
+/16="恰当的"
+/17="有趣的"
+/18="精彩的"
+/19="绚丽的"
+/20="美好的"
+/21="合适的"
+/22="可喜的"
+/23="繁荣的" 
+/24="多彩的"
+/25="香甜的"
+</item>
+
+<item ATTRR>
+	/1="焦虑的"
+	/2="伤心的"
+	/3="恐惧的"
+	/4="惊悚的"
+	/5="悲伤的"
+	/6="阴暗的"
+	/7="可怕的"
+	/8="难过的"
+	/9="不安的"
+	/10="恶心的"
+	/11="沮丧的"
+	/12="颓废的"
+	/13="萎靡的"
+	/14="消沉的"
+	/15="空虚的"
+	/16="哀怨的"
+	/17="堕落的"
+	/18="绝望的"
+	/19="厌世的"
+	/20="极端的"
+	/21="沦落的"
+	/22="空无的"
+	/23="郁闷的"
+	/24="丧气的"
+	/25="懒惰的"
+</item>
+
+<text ATTR_right>  
+/ numitems = 1
+/ font = ("宋体", -40, 700, 0, 34)
+/ items = ("消极的")
+/ position = (75, 17)
+/ color = (0, 0, 255)
+/ txbgcolor = (180,180,181)
+</text>
+
+<text ATTRR>
+/ items = ATTRR
+/ erase = true (180, 180, 181)
+/ numitems = 25
+/ color = (0, 0, 255)
+/ txbgcolor = (180,180,181)
+</text >
+
+<text TARG1_left>  
+/ numitems = 1
+/ items = ("花")
+/ font = ("宋体", -40, 700, 0, 34)
+/ position = (25, 30)
+/ color = (0,128,0)
+/ txbgcolor = (180,180,181)
+</text>
+
+<text TARG1_right>  
+/ numitems = 1
+/ items = ("花")
+/ font = ("宋体", -40, 700, 0, 34)
+/ position = (75, 30)
+/ color = (0,128,0)
+/ txbgcolor = (180,180,181)
+</text>
+
+
+<text TARG1>
+/ items = TARG1
+/ erase = true (180, 180, 181)
+/ numitems = 25
+/ color = (0,128,0)
+/ txbgcolor = (180,180,181)
+</text >
+
+<Item Targ1>
+/1="丁香"
+/2="广玉兰"
+/3="茉莉"
+/4="蔷薇"
+/5="郁金香"
+/6="夜来香"
+/7="棣棠"
+/8="虞美人"
+/9="水仙"
+/10="紫薇"
+/11="牡丹"
+/12="鸢尾"
+/13="天竺葵"
+/14="芍药"
+/15="三色堇"
+/16="八仙花"
+/17="蝴蝶兰"
+/18="紫藤萝"
+/19="美人蕉"
+/20="勿忘我"
+/21="康乃馨"
+/22="玫瑰"
+/23="百合"
+/24="小雏菊"
+/25="风信子"
+
+</item>
+
+<Item Targ2>
+/1="蜘蛛"
+/2="蝗虫"
+/3="毛毛虫"
+/4="蚜虫"
+/5="苍蝇"
+/6="蚊子"
+/7="蟑螂"
+/8="蜜蜂"
+/9="马蜂"
+/10="黄蜂"
+/11="蜻蜓"
+/12="金龟子"
+/13="蝴蝶"
+/14="蟋蟀"
+/15="虱子"
+/16="蜉蝣"
+/17="蝉"
+/18="甲壳虫"
+/19="蛆"
+/20="蚂蚁"
+/21="蛾子"
+/22="蜈蚣"
+/23="蚂蟥"
+/24="瓢虫"
+/25="蜣螂"
+</item>
+
+<text TARG2_left>  
+/ numitems = 1
+/ items = ("昆虫")
+/ font = ("宋体", -40, 700, 0, 34)
+/ position = (25, 30)
+/ color = (0,128,0)
+/ txbgcolor = (180,180,181)
+</text>
+
+<text TARG2_right>  
+/ numitems = 1
+/ items = ("昆虫")
+/ font = ("宋体", -40, 700, 0, 34)
+/ position = (75, 30)
+/ color = (0,128,0)
+/ txbgcolor = (180,180,181)
+</text>
+
+
+<text TARG2>
+/ items = TARG2
+/ erase = true (180, 180, 181)
+/ numitems = 25
+/ color = (0,128,0)
+/ txbgcolor = (180,180,181)
+</text>
+
+<trial practice>
+/ correctresponse = (" ")
+/ frames = [1=spacebar, practice]
+/ responsemode = correct
+/ pretrialpause = 500
+/ posttrialpause = 500
+/ correctmessage = false
+/ errormessage = false
+</trial>
+
+<trial attrib_spacebar>
+/ correctresponse = (" ")
+/ frames = [1=SPACEBAR, FEEDBACK1, FEEDBACK2, FEEDBACK3]
+/ responsemode = correct
+/ pretrialpause = 500
+/ posttrialpause = 500
+/ correctmessage = false
+/ errormessage = false
+</trial>
+
+<trial test>
+/ correctresponse = (" ")
+/ frames = [1=spacebar, test]
+/ responsemode = correct
+/ pretrialpause = 500
+/ posttrialpause = 500
+/ correctmessage = false
+/ errormessage = false
+</trial>
+
+<trial ATTRleft>
+/ correctresponse = ("d")
+/ frames = [1=BLANK, ATTRL]
+</trial>
+
+<trial ATTRright>
+/ correctresponse = ("k")
+/ frames = [1=BLANK, ATTRR]
+</trial>
+
+<trial TARG1left>
+/ correctresponse = ("d")
+/ frames = [1=BLANK, TARG1]
+</trial>
+
+<trial TARG1right>
+/ correctresponse = ("k")
+/ frames = [1=BLANK, TARG1]
+</trial>
+
+<trial TARG2left>
+/ correctresponse = ("d")
+/ frames = [1=BLANK, TARG2]
+</trial>
+
+<trial TARG2right>
+/ correctresponse = ("k")
+/ frames = [1=BLANK, TARG2]
+</trial>
+
+ *字体
+
+<text blank>
+/ numitems = 1
+/ txbgcolor = (180, 180, 181)
+/ erase = false
+/ items = ("                     ")
+/ txbgcolor = (180,180,181)
+</text>
+
+<text error>
+/ numitems = 1
+/ items = ("X")
+/ color = (255, 0, 0)
+/ font = ("宋体", -48, 700, 0, 34)
+/ erase = true (180, 180, 181)
+/ position = (50,60)
+/ txbgcolor = (180,180,181)
+</text>
+
+*提示语
+<text SPACEBAR>
+/ numitems = 1
+/ items = ("认真阅读以上的指导语, 然后按空格键开始实验")
+/ position = (50,60)
+/ font = ("宋体", -17, 700, 0, 34)
+/ erase = true (180, 180, 181)
+/ color = (255,0,0)
+/ txbgcolor = (180,180,181)
+</text>
+
+<text PRACTICE>
+/ numitems = 1
+/ items = ("这是一个练习 -- 犯错误是可以接受的")
+/ position = (50,50)
+/ font = ("宋体", -19, 700, 0, 34)
+/ erase = true (180, 180, 181)
+/ color = (200,55,55)
+/ txbgcolor = (180,180,181)
+</text>
+
+<text TEST>
+/ numitems = 1
+/ items = ("这是一个测试 -- 你需要尽量快速完成任务，在可接受的范围内你可以犯一些错误")
+/ position = (50,50)
+/ font = ("宋体", -19, 700, 0, 34)
+/ erase = true (180, 180, 181)
+/ color = (255,0,0)
+/ txbgcolor = (180,180,181)
+</text>
+
+<text FEEDBACK1>
+/ numitems = 1
+/ items = ("如果回答错误你会在刺激的下方")
+/ font = ("宋体", -19, 700, 0, 34)
+/ position = (50,35)
+/ txbgcolor = (180,180,181)
+</text>
+
+<text FEEDBACK2>
+/ numitems = 1
+/ items = ("看见一个红色的X，当这件事发生时，")
+/ font = ("宋体", -19, 700, 0, 34)
+/ position = (50,40)
+/ txbgcolor = (180,180,181)
+</text>
+
+<text FEEDBACK3>
+/ numitems = 1
+/ items = ("你需要修正答案以继续实验")
+/ font = ("宋体", -19, 700, 0, 34)
+/ position = (50,45)
+/ txbgcolor = (180,180,181)
+</text>
+
+<text INSTR_D>
+/ numitems = 1
+/ font = ("宋体", -27, 700, 0, 34)
+/ items = ("按‘d’")
+/ position = (25, 10)
+/ txbgcolor = (180,180,181)
+</text>
+
+<text INSTR_K>
+/ numitems = 1
+/ font = ("宋体", -27, 700, 0, 34)
+/ items = ("按‘k’")
+/ position = (75, 10)
+/ txbgcolor = (180,180,181)
+</text>
+
+<text OR_left>
+/ numitems = 1
+/ items = ("或者")
+/ font = ("宋体", -30, 700, 0, 34)
+/ position = (25, 23)
+/ color = (128,128,128)
+/ txbgcolor = (180,180,181)
+</text>
+
+<text OR_right>
+/ numitems = 1
+/ items = ("或者")
+/ font = ("宋体", -30, 700, 0, 34)
+/ position = (75, 23)
+/ color = (128,128,128)
+/ txbgcolor = (180,180,181)
+</text>
+
+*指导语
+<instruct>  
+/ font = ("黑体", -19, 700, 0, 49)
+/ nextkey = (" ")
+/ nextlabel = "按空格键继续"
+/ lastlabel = "按空格继续"
+/prevlabel = "请按'd'返回上一页"
+/ prevkey = ("d")
+/ screencolor = (180,180,181)
+</instruct>
+
+
+<page begin1>
+^ 指导语
+^^在每一个分类任务中，屏幕中心将会显示一个词。
+
+^^你的任务是以最快的速度将这些词以"d"键和"k"键分类.
+^^注意：用左手食指按"d"，用右手食指按"k"
+^^"d"与"k"代表的类别将在屏幕上方显示。请仔细关注这些类别，每个任务中他们是不同的。
+</page>
+
+<page end>
+^^^本次任务已经结束。请按空格键继续。
+</page>
+
+<page see>
+^^请仔细阅读下一页。
+^^它是接下来的分类任务的关键指导。
+</page>
+
+<page switch>
+^接下来的几组任务会改变其中一个类别。
+^^在整个实验中，都会在屏幕上方有所提示。
+^^请在本组试次中熟悉任务以便在后面的任务中尽快反应。
+</page>
+
+<page instruction1>
+^^^Anthony G. Greenwald, Professor, Psychology (543-7227)
+^^High-function Ahead
+^^^对于试验流程的简短描述在之后。
+</page>
+
+<page instruction2>
+^^我们主要研究了与记忆有关的选择的认知过程。我们试图构建认知过程中对记忆的有意与无意的使用。
+^^刺激将会在这块屏幕上显示。你的反应由键盘输入。</page>
+
+<page instruction4>
+^^本研究假设你能够流利地阅读中文。你的视力正常或矫正后正常。如果你认为自己的中文不流利或视力不正常，甚至你阅读本介绍有困难。请询问主试你是否还应该继续（无论如何你都会得到参与的奖励）。
+^^你作为被试的身份是保密的，同时，你也可以随时结束实验，没有任何惩罚。
+</page>
+
+<page instruction5>
+^^按照常规，你的数据将会保留五年。但是只有本实验的研究者可以接触到这些数据。
+^^^现在请阅读下一页的声明，并回答知情同意书。
+</page>
+
+<page consent>
+同意声明
+^^我已经阅读了试验流程介绍。我了解我对于本实验可能产生的问题将被主试解答。
+^^我同意参加之前提及的实验。
+^^[指导语：如果同意按空格键继续。
+^如果有任何问题，请向主试提问。如果你不愿继续，请告知主试。]
+</page>
