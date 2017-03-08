@@ -1,0 +1,43 @@
+﻿<picture instruction>
+	/ halign = center
+	/items = ("instruction.bmp")
+	/size = (1536,864)
+
+</picture>
+
+<picture goodbye>
+	/ halign = center
+	/items = ("goodbye.bmp")
+	/size = (1536,864)
+
+</picture>
+
+<trial instruction>
+	/validresponse = (" ")
+	/stimulusframes = [1 = instruction]
+
+</trial>
+
+<trial goodbye>
+	/validresponse = (" ")
+	/stimulusframes = [1 = goodbye]
+
+</trial>
+
+<block instruction>
+	/screencolor = (255,255,255)
+	/trials = [1 = instruction]
+
+
+</block>
+
+<block goodbye>
+	/screencolor = (255,255,255)
+	/trials = [1 = goodbye]
+
+
+</block>
+
+<expt >
+	/ blocks = [1 = instruction;2 = goodbye]
+</expt>
